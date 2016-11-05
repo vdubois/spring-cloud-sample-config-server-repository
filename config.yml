@@ -2,6 +2,8 @@ spring:
   cloud:
     config:
       server:
+        git:
+          force-pull: true          
         default-application-name: default-application-name
 eureka:
   client.serviceUrl.defaultZone: http://localhost:9000/eureka
