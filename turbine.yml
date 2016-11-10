@@ -9,4 +9,4 @@ eureka:
 turbine:
   aggregator:
     clusterConfig: MICROSERVICES
-  appConfig: microservice,recommendations-service
+  appConfig: MICROSERVICE,RECOMMENDATIONS-SERVICE
