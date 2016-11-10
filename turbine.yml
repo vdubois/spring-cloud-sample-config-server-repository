@@ -6,3 +6,7 @@ eureka:
     app-group-name: microservices
     hostname: localhost
     appname: turbine
+turbine:
+  aggregator:
+    clusterConfig: MICROSERVICES
+  appConfig: microservice,recommendations-service
