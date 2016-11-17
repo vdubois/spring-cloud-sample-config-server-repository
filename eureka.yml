@@ -1,5 +1,9 @@
 server:
   port: 9000
+spring:
+  rabbitmq:
+    host: rabbit
+    addresses: rabbit:5672
 eureka:
   instance:
     hostname: eureka
