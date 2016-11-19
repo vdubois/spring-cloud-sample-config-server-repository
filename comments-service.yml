@@ -4,8 +4,8 @@ spring:
   jpa:
     show-sql: true
 eureka:
-  client.serviceUrl.defaultZone: http://localhost:9000/eureka
+  client.serviceUrl.defaultZone: http://eureka:9000/eureka
   instance:
     app-group-name: microservices
-    hostname: localhost
+    hostname: eureka
     appname: comments-service
