@@ -6,3 +6,8 @@ eureka:
     app-group-name: microservices
     hostname: eureka
     appname: admin-dashboard
+spring:
+  boot:
+    admin:
+      routes:
+        endpoints: env,metrics,trace,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,hystrix.stream
