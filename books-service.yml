@@ -1,5 +1,3 @@
-server:
-  port: 0
 spring:
   datasource:
     url: jdbc:mysql://booksservicedb:3306/booksservice?useUnicode=true&characterEncoding=utf8&useSSL=false
