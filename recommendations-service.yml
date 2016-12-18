@@ -1,0 +1,12 @@
+server:
+  port: 8002
+eureka:
+  client.serviceUrl.defaultZone: http://eureka:8761/eureka
+  instance:
+    app-group-name: microservices
+    hostname: eureka
+    appname: recommendations-service
+spring:
+  rabbitmq:
+    host: rabbit
+    addresses: rabbit:5672

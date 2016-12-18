@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          force-pull: true          
+        default-application-name: default-application-name
+  rabbitmq:
+    host: rabbit
+    addresses: rabbit:5672
+server:
+  port: 8888

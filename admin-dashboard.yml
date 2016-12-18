@@ -1,0 +1,16 @@
+server:
+  port: 8088
+eureka:
+  client.serviceUrl.defaultZone: http://eureka:8761/eureka
+  instance:
+    app-group-name: microservices
+    hostname: eureka
+    appname: admin-dashboard
+spring:
+  boot:
+    admin:
+      routes:
+        endpoints: env,metrics,trace,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,hystrix.stream
+      turbine:
+        clusters: default
+        url: http://turbine:8989/turbine.stream
