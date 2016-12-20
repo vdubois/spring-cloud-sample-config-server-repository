@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.cache.use_second_level_cache: true
+      hibernate.cache.use_query_cache: false
+      hibernate.generate_statistics: false
+      hibernate.cache.region.factory_class: com.hazelcast.hibernate.HazelcastCacheRegionFactory
+      hibernate.cache.hazelcast.instance_name: booksservice
+      hibernate.cache.use_minimal_puts: true
+      hibernate.cache.hazelcast.use_lite_member: true
+    hibernate:
+      ddl-auto: create
+  rabbitmq:
+    host: rabbit
+    addresses: rabbit:5672
+eureka:
+  client.serviceUrl.defaultZone: http://eureka:8761/eureka
+  instance:
+    app-group-name: microservices
+    hostname: eureka
+    appname: books-service
+cache: # Hibernate 2nd level cache, used by CacheConfiguration
+    hazelcast:
+        timeToLiveInSeconds: 3600
