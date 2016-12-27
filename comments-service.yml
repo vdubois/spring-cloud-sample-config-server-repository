@@ -1,7 +1,7 @@
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://db:3306/booksservice?useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://db:3306/commentsservice?useUnicode=true&characterEncoding=utf8&useSSL=false
     name:
     username: root
     password: admin
