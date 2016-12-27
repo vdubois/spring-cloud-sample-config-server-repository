@@ -24,7 +24,6 @@ eureka:
   client.serviceUrl.defaultZone: http://eureka:8761/eureka
   instance:
     app-group-name: microservices
-    hostname: eureka
     appname: books-service
 cache: # Hibernate 2nd level cache, used by CacheConfiguration
     hazelcast:
