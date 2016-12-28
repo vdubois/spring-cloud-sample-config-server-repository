@@ -25,6 +25,5 @@ eureka:
   instance:
     app-group-name: microservices
     appname: books-service
-cache: # Hibernate 2nd level cache, used by CacheConfiguration
-    hazelcast:
-        timeToLiveInSeconds: 3600
+hazelcast:
+  enabled: true
