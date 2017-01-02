@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://db:3306/authservice?useUnicode=true&characterEncoding=utf8&useSSL=false
+    name:
+    username: root
+    password: admin
+    hikari:
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  rabbitmq:
+    host: rabbit
+    addresses: rabbit:5672
+eureka:
+  client.serviceUrl.defaultZone: http://eureka:8761/eureka
+  instance:
+    app-group-name: microservices
+    appname: authentication-service
