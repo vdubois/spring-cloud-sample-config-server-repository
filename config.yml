@@ -9,4 +9,4 @@ spring:
     host: rabbit
     addresses: rabbit:5672
 server:
-  port: 8888
+  port: 8080
